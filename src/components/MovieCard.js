@@ -27,7 +27,10 @@ const useStyles = makeStyles(theme => ({
   },
   reating: { 
     background: "#01D277",
-    borderRadius: "8px",
+    borderRadius: "17px",
+    width: 55,
+    height:32,
+    minHeight:32
   },
   movieName: {
     fontFamily: "Roboto",

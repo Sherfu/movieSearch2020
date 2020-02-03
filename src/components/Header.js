@@ -92,9 +92,9 @@ const useStyles = makeStyles(theme => ({
   LogoRoot: {
    textAlign: 'center',     
    padding: theme.spacing(5) , 
-   height:150, 
+   height:183, 
    width:"100%",
-   background: "radial-gradient(82.98% 213.08% at 53.46% -21.35%, rgba(5, 112, 172, 0.46) 0%, rgba(8, 27, 35, 0) 100%)",
+   background: "radial-gradient(82.98% 213.08% at 53.46% -21.35%, rgba(5, 112, 172, 0.46) 0%, rgb(8, 15, 35) 100%);",
   },
   LogoImg: {
     position: "absolute",

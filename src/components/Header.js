@@ -175,8 +175,8 @@ function Header( ) {
   return (
  
     <div className={classes.root}> 
-         <div className={classes.iconLtop}></div>
-        <div className={classes.iconRtop}></div> 
+{/*          <div className={classes.iconLtop}></div>
+        <div className={classes.iconRtop}></div> */} 
         <div className={classes.LogoRoot}>            
             <Logo fill="#01D277" className={classes.LogoImg}/>          
         </div> 

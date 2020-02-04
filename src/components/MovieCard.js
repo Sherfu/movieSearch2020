@@ -59,11 +59,9 @@ const MovieCard = ({ movie, loading, hideOverview }) => {
  
   return (
      <Card className={classes.card}  >
-        <Fab  className={classes.reating} size="small" aria-label="Ratting">
+         <Fab  className={classes.reating} size="small" aria-label="Ratting">
           <Typography variant="button">
-          {movie.vote_average }
-{/*             {movie.vote_average.toString().split(".")[0]}
-            <sup>.{movie.vote_average.toString().split(".")[1] || 0}</sup> */}
+            {movie.vote_average * 10 + "%" }
           </Typography>
         </Fab>
         <Link

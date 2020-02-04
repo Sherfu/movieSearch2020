@@ -25,7 +25,7 @@ const useStyles = makeStyles(theme => ({
   },
   media: {
     width: "100%",
-    minHeight: 364,
+    /* minHeight: 364, */
     marginTop: "-48px",
      
   },

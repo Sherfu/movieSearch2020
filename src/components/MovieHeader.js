@@ -86,7 +86,7 @@ const MovieHeader = ({ movie }) => {
       </div>
       <Container maxWidth = 'lg' >
       <Grid container spacing={4}>
-        <Grid item lg={3} sm={4} md={6} >
+        <Grid item lg={3} sm={3} md={3} xs={6}>
           <img
             src={`https://image.tmdb.org/t/p/w600_and_h900_bestv2/${movie.poster_path}`}
             alt={movie.original_title}
@@ -94,7 +94,7 @@ const MovieHeader = ({ movie }) => {
             sm={4}
           />
         </Grid>
-        <Grid item lg={6}>
+        <Grid item lg={6} xs={6} >
           <div>
             <Typography className={classes.movieTitle} >
               {movie.original_title}

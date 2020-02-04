@@ -2,9 +2,6 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { makeStyles } from "@material-ui/core/styles";
 
-import Typography from "@material-ui/core/Typography";
-import Pagination from "material-ui-flat-pagination";
-
 import { fetchMovies } from "../actions/moviesActions";
 
 import Header from "../components/Header";
@@ -18,27 +15,7 @@ import Container from "@material-ui/core/Container";
 const useStyles = makeStyles(theme => ({
   root: {
     
-  },
-  paginationContainer: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    marginTop: theme.spacing(2)
-  },
-  loader: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "calc(100vh - 160px)"
-  },
-  loaderSpinOne: {
-    position: "relative",
-    right: 50
-  },
-  loaderSpinTwo: {
-    position: "relative",
-    right: 80
-  },
+  },  
   pageTitle: {    
     fontFamily: "Montserrat",
     fontStyle: "normal",

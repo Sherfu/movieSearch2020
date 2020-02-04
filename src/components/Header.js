@@ -46,7 +46,7 @@ const useStyles = makeStyles(theme => ({
   LogoRoot: {
    textAlign: 'center',     
    padding: theme.spacing(5) , 
-   height:183, 
+   height:193, 
    width:"100%",
    background: "radial-gradient(82.98% 213.08% at 53.46% -21.35%, rgba(5, 112, 172, 0.46) 0%, rgb(6, 12, 30) 100%);",
   },
@@ -112,6 +112,9 @@ const useStyles = makeStyles(theme => ({
     right: "74.67%",
     top: "0%",
     bottom: "98.39%", 
+    [theme.breakpoints.down('xs')]: {      
+      bottom: "99.39%",
+    },
     background: "rgba(1, 210, 119, 0.83)",
     borderRadius: "3.5px",
     transform: "rotate(-45deg)",
@@ -121,6 +124,10 @@ const useStyles = makeStyles(theme => ({
     position: "absolute",
     left: "10.13%",
     right: "66.67%",
+    [theme.breakpoints.down('xs')]: {
+      right: "57.67%",
+      bottom: "99.39%",
+    },
     top: "0%",
     bottom: "98.39%",
     background: "rgba(1, 210, 119, 0.83)",
@@ -134,6 +141,9 @@ const useStyles = makeStyles(theme => ({
     right: "5.67%",
     top: "0%",
     bottom: "98.39%",
+    [theme.breakpoints.down('xs')]: {
+      bottom: "99.39%",
+    },
     background: "rgba(1, 210, 119, 0.83)",
     borderRadius: "3.5px",
     transform: "rotate(-45deg)",
@@ -143,11 +153,45 @@ const useStyles = makeStyles(theme => ({
     position: "absolute",
     left: "68.13%",
     right: "16.67%",
+    [theme.breakpoints.down('xs')]: {
+      right: "-11.33%",
+      bottom: "99.39%",
+    }, 
     top: "0%",
     bottom: "98.39%",
     background: "rgba(1, 210, 119, 0.83)",
     borderRadius: "3.5px",
     transform: "rotate(-45deg)",
+
+  },
+  paperRtxs: {
+    //padding: theme.spacing(1),
+    position: "absolute",
+    [theme.breakpoints.down('xs')]: {
+      top: "12%",
+      left: "66.13%",
+      right: "4.67%",
+      bottom: "87.39%",
+      transform: "rotate(-45deg)",
+      background: "rgba(1, 210, 119, 0.83)",
+      borderRadius: "3.5px",
+    },
+    [theme.breakpoints.up('md')]: {
+     // backgroundColor: theme.palette.primary.main,
+    }, 
+  },
+  paperLtxs: {
+    //padding: theme.spacing(1),
+    position: "absolute",
+    [theme.breakpoints.down('xs')]: {
+      top: "12%",
+      left: "10.13%",
+      right: "63.67%",
+      bottom: "87.39%",
+      transform: "rotate(-45deg)",
+      background: "rgba(1, 210, 119, 0.83)",
+      borderRadius: "3.5px",
+    }, 
   },
 }));
 
@@ -174,33 +218,32 @@ function Header( ) {
     <div className={classes.root}> 
   {/*       <div className={classes.iconLtop}></div>
         <div className={classes.iconRtop}></div>  */}
-{/*         <div maxWidth = 'lg' >
-          <Grid item lg={3} sm={4} md={6} xs={12}>
-            <Grid container item lg={12} spacing={3}>
+        <div maxWidth = 'lg' >
+          <Grid item lg={12} sm={12} md={12} xs={12}>
+            <Grid container>
             <Paper className={classes.paperLt}></Paper>
             </Grid>
-            <Grid container item lg={12} spacing={3}>
+            <Grid container>
             <Paper className={classes.paperLts}></Paper>
             </Grid>
-            <Grid container item lg={12} spacing={3}> 
+            <Grid container > 
             <Paper className={classes.paperRt}></Paper>
             </Grid>
-            <Grid container item lg={12} spacing={3}>
+            <Grid container >
             <Paper className={classes.paperRts}></Paper>
             </Grid>
+            <Grid container >
+            <Paper className={classes.paperRtxs}></Paper>
+            </Grid>
+            <Grid container >
+            <Paper className={classes.paperLtxs}></Paper>
+            </Grid>
           </Grid>
-      </div> */}
+      </div> 
 
         <div className={classes.LogoRoot}>   
-      
-         {/*  <Paper className={classes.paperLt}></Paper>           
-            <Paper className={classes.paperLts}></Paper>   */}     
             <Logo fill="#01D277" className={classes.LogoImg}/>  
-{/*             <Paper className={classes.paperRt}></Paper>     
-            <Paper className={classes.paperRts}></Paper>   */} 
-        </div> 
-{/*         <div className={classes.iconLBotm}></div>
-        <div className={classes.iconRBotm}></div>   */}     
+        </div>     
             <Paper component="form" className={classes.searchRoot}>
             <InputBase
                 className={classes.searchInput}

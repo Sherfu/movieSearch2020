@@ -2,7 +2,6 @@ import { client } from "./";
 
 import {
   FETCH_MOVIES,
-  FETCH_GENRE,
   FETCH_MOVIES_BY_SEARCH,
   FETCH_MOVIE_DETAILS,
   FETCH_MOVIE_REVIEWS,

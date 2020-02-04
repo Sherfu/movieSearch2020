@@ -20,7 +20,7 @@ const MoviesCardList = ({
   
   const moviesList = () => {
     return movies.map(movie => (
-      <Grid item lg={3} sm={4} md={6} xs={12} key={movie.id}>
+      <Grid item lg={3} sm={6} md={4} xs={12} key={movie.id}>
         <MovieCard
             movie={movie}
             loading={loading}

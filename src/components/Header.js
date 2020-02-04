@@ -4,14 +4,14 @@ import { fetchMovieSearch } from "../actions/moviesActions";
 import { fetchMovies } from "../actions/moviesActions";
 
 import { makeStyles, fade } from "@material-ui/core/styles";
-//import Toolbar from "@material-ui/core/Toolbar";
+import Grid from "@material-ui/core/Grid";
 
 import InputBase from "@material-ui/core/InputBase";
 import { useTheme } from "@material-ui/core/styles";
 
 import Paper from '@material-ui/core/Paper';
 //import InputBase from '@material-ui/core/InputBase';
-import Divider from '@material-ui/core/Divider';
+//import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 
 import SearchIcon from "@material-ui/icons/Search";
@@ -105,7 +105,50 @@ const useStyles = makeStyles(theme => ({
   },
   iconColor: {
     color: "#01D277",   
-  }
+  },
+  paperLt: {
+    position: "absolute",
+    left: "11.13%",
+    right: "74.67%",
+    top: "0%",
+    bottom: "98.39%", 
+    background: "rgba(1, 210, 119, 0.83)",
+    borderRadius: "3.5px",
+    transform: "rotate(-45deg)",
+  },
+  paperLts: {
+   // padding: theme.spacing(1),
+    position: "absolute",
+    left: "10.13%",
+    right: "66.67%",
+    top: "0%",
+    bottom: "98.39%",
+    background: "rgba(1, 210, 119, 0.83)",
+    borderRadius: "3.5px",
+    transform: "rotate(-45deg)",
+  },
+  paperRt: {
+    //padding: theme.spacing(1),
+    position: "absolute",
+    left: "66.13%",
+    right: "5.67%",
+    top: "0%",
+    bottom: "98.39%",
+    background: "rgba(1, 210, 119, 0.83)",
+    borderRadius: "3.5px",
+    transform: "rotate(-45deg)",
+  },
+  paperRts: {
+    //padding: theme.spacing(1),
+    position: "absolute",
+    left: "68.13%",
+    right: "16.67%",
+    top: "0%",
+    bottom: "98.39%",
+    background: "rgba(1, 210, 119, 0.83)",
+    borderRadius: "3.5px",
+    transform: "rotate(-45deg)",
+  },
 }));
 
 function Header( ) {
@@ -129,10 +172,32 @@ function Header( ) {
   return (
  
     <div className={classes.root}> 
-{/*          <div className={classes.iconLtop}></div>
-        <div className={classes.iconRtop}></div> */} 
-        <div className={classes.LogoRoot}>            
-            <Logo fill="#01D277" className={classes.LogoImg}/>          
+  {/*       <div className={classes.iconLtop}></div>
+        <div className={classes.iconRtop}></div>  */}
+{/*         <div maxWidth = 'lg' >
+          <Grid item lg={3} sm={4} md={6} xs={12}>
+            <Grid container item lg={12} spacing={3}>
+            <Paper className={classes.paperLt}></Paper>
+            </Grid>
+            <Grid container item lg={12} spacing={3}>
+            <Paper className={classes.paperLts}></Paper>
+            </Grid>
+            <Grid container item lg={12} spacing={3}> 
+            <Paper className={classes.paperRt}></Paper>
+            </Grid>
+            <Grid container item lg={12} spacing={3}>
+            <Paper className={classes.paperRts}></Paper>
+            </Grid>
+          </Grid>
+      </div> */}
+
+        <div className={classes.LogoRoot}>   
+      
+         {/*  <Paper className={classes.paperLt}></Paper>           
+            <Paper className={classes.paperLts}></Paper>   */}     
+            <Logo fill="#01D277" className={classes.LogoImg}/>  
+{/*             <Paper className={classes.paperRt}></Paper>     
+            <Paper className={classes.paperRts}></Paper>   */} 
         </div> 
 {/*         <div className={classes.iconLBotm}></div>
         <div className={classes.iconRBotm}></div>   */}     

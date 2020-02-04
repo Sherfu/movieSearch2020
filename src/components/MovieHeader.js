@@ -2,8 +2,8 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
-import Rating from "@material-ui/lab/Rating";
-import IconButton from "@material-ui/core/IconButton";
+//import Rating from "@material-ui/lab/Rating";
+//import IconButton from "@material-ui/core/IconButton";
 import Container from "@material-ui/core/Container";
 
 const useStyles = makeStyles(theme => ({
@@ -24,14 +24,6 @@ const useStyles = makeStyles(theme => ({
     borderRadius: "10px",
     marginTop:"-75px",
     boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.5), 0px 8px 16px rgba(0, 0, 0, 0.5), 0px 16px 32px rgba(0, 0, 0, 0.5)",
-  },
-  generalInfo: {
-    display: "flex",
-    alignItems: "center",
-    "& legend": {
-      width: "inherit",
-      marginRight: 8
-    }
   },
   modalContainer: {
     position: "absolute",
@@ -83,7 +75,8 @@ const MovieHeader = ({ movie }) => {
   const headerStyle = {  
     backgroundImage: `linear-gradient(rgba(3, 3, 3, 0.30), rgba(0, 0, 5, 0.30)), url(https://image.tmdb.org/t/p/w1400_and_h450_bestv2${movie.backdrop_path})`
   };
-
+    
+   const rating = parseInt(movie.vote_average * 10);
    const yearOfRelease = new Date (movie.release_date).getFullYear();
 
   return (
@@ -107,24 +100,14 @@ const MovieHeader = ({ movie }) => {
               {movie.original_title}
             </Typography>
             <Typography className={classes.reviewCont} >
-              {  yearOfRelease }
+              {  yearOfRelease + "  .  " + rating + "% User score" }
             </Typography>
-          </div>
-          <div className={classes.generalInfo}>
-            <Typography className={classes.reviewCont} >{movie.vote_average}</Typography>
- {/*            <Rating
-              name="read-only"
-              value={movie.vote_average / 2}
-              precision={0.1}
-              readOnly
-            /> */}
-           
-          </div>       
+          </div>     
         </Grid>
        
-        <Grid item lg={12} >
+        <Grid item lg={12} sm={12} md={12} xs={12} >
         <div className={classes.borderLine}> </div>
-        <div>
+          <div>
             <Typography className={classes.movieReview}>
               Overview
             </Typography>

@@ -33,7 +33,13 @@ const useStyles = makeStyles(theme => ({
     borderRadius: "17px",
     width: 55,
     height:32,
-    minHeight:32
+    minHeight:32,
+    fontFamily: "Roboto",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    fontSize: "12px",
+    lineHeight: "14px",
+    color: "#E6F7FF",
   },
   movieName: {
     fontFamily: "Roboto",
@@ -91,33 +97,7 @@ const MovieCard = ({ movie, loading, hideOverview }) => {
             { monthOfRelease+ " " + yearOfRelease || "Unknown"}
           </Typography>
       </CardContent>
-      </CardActionArea>
-
-        {/* <Fab  className={classes.reating} size="small" aria-label="Ratting">
-          <Typography variant="button">
-            {movie.vote_average.toString().split(".")[0]}
-            <sup>.{movie.vote_average.toString().split(".")[1] || 0}</sup>
-          </Typography>
-        </Fab>      
-      <Link
-        component={RouterLink}
-        to={`/movies/${movie.id}`}
-        underline="none"
-        variant="inherit"
-      >        
-        <img
-          alt={movie.original_title}
-          className={classes.media}
-          onError={onErrorLoadingImage}
-          src={`https://image.tmdb.org/t/p/w600_and_h900_bestv2/${movie.poster_path}`}
-        />
-      </Link>      
-      <CardContent style={{ backgroundColor: '#081B23'}}>
-          <Typography className={classes.movieName} >
-                {movie.original_title}
-          </Typography>
-          {"Release:"  + movie.release_date || "Unknown"}
-      </CardContent>  */}   
+      </CardActionArea>   
     </Card>
     
   );

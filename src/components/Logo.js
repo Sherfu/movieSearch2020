@@ -4,7 +4,7 @@ const Logo = props => {
     return (
       <svg
         height="59"
-        viewBox="10 10 241 241"        
+        viewBox="7 0 241 241"        
         width="66"        
         {...props}
       >

@@ -27,52 +27,6 @@ const useStyles = makeStyles(theme => ({
    bottom: "83.17%",   
   // background: "radial-gradient(82.98% 213.08% at 53.46% -21.35%, rgba(5, 112, 172, 0.46) 0%, rgba(8, 27, 35, 0) 100%)",  
   },
- /*search: {
-    position: "relative",   
-    //borderRadius: theme.shape.borderRadius,
-    //backgroundColor: "#FFFFFF",    
-    marginLeft: 0,
-    width: "100%",
-    [theme.breakpoints.up("sm")]: {
-      marginLeft: theme.spacing(1),
-      width: "auto"
-    },
-  },
-  searchIcon: {
-    width: theme.spacing(7),
-    height: "100%",
-    position: "absolute",
-    pointerEvents: "none",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",    
-    color:"#01D277"
-  },
-  inputRoot: {
-    color: "#01D277",
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)',
-    borderRadius: '20px',
-    backgroundColor: "#FFFFFF",
-    marginTop: "-10px",
-    marginLeft: "88px",
-    width:300
-  },
-  inputInput: {
-    padding: theme.spacing(1, 1, 1, 7),
-    transition: theme.transitions.create("width"),
-    width: "100%",    
-    [theme.breakpoints.up("sm")]: {
-      width: 350,
-      "&:focus": {
-        width: 380
-      },     
-      fontFamily: "Roboto",
-      fontStyle: "normal",
-      fontWeight: "500",
-      fontSize: "14px",
-      lineHeight: "16px",   
-    },
-  }, */
   inputRoot: {
     color: "#01D277",
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)',
@@ -94,14 +48,14 @@ const useStyles = makeStyles(theme => ({
    padding: theme.spacing(5) , 
    height:183, 
    width:"100%",
-   background: "radial-gradient(82.98% 213.08% at 53.46% -21.35%, rgba(5, 112, 172, 0.46) 0%, rgb(8, 15, 35) 100%);",
+   background: "radial-gradient(82.98% 213.08% at 53.46% -21.35%, rgba(5, 112, 172, 0.46) 0%, rgb(6, 12, 30) 100%);",
   },
   LogoImg: {
     position: "absolute",
     left: "50.13%",
     right: "47.47%",
-    top: "7.27%",
-    bottom: "91.94%",
+    top: "7.26%",
+    bottom: "89.94%",
   },
    iconLtop: {
     position: "absolute",

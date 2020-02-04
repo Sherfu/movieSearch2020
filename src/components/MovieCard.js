@@ -29,8 +29,7 @@ const useStyles = makeStyles(theme => ({
     marginTop: "-48px",
      
   },
-  reating: { 
-    background: "#01D277",
+  reating: {     
     borderRadius: "17px",
     width: 55,
     height:32,
@@ -53,15 +52,20 @@ const MovieCard = ({ movie, loading, hideOverview }) => {
   const onErrorLoadingImage = e => {
     e.target.src = "";
   };
-
+  const rating = parseInt(movie.vote_average * 10);
   const yearOfRelease = new Date (movie.release_date).getFullYear();
   const monthOfRelease = new Date (movie.release_date).toLocaleString("en-us", { month: "long" });
  
   return (
      <Card className={classes.card}  >
-         <Fab  className={classes.reating} size="small" aria-label="Ratting">
+         <Fab 
+            className={classes.reating} 
+            size="small"
+            aria-label="Ratting"            
+            style={{background: ((rating >= 70)? '#01D277' : (rating < 40 ? '#D1225B' : '#4902A3' )) }}
+          >
           <Typography variant="button">
-            {movie.vote_average * 10 + "%" }
+            {rating + "%"}  
           </Typography>
         </Fab>
         <Link

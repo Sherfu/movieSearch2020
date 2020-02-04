@@ -11,13 +11,13 @@ const useStyles = makeStyles(theme => ({
     //position:"absolute",
   },
   header: {
-    height: 320,
+    height: 420,
     width: "100%",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     //marginTop: 40,
-    marginBottom: 24
+    marginBottom: 24 
   },
   moviePoster: {
     width: "100%",
@@ -79,8 +79,8 @@ const MovieHeader = ({ movie }) => {
   const onErrorLoadingImage = e => {
     e.target.src = "";
   };
- 
-  const headerStyle = {
+  
+  const headerStyle = {  
     backgroundImage: `linear-gradient(rgba(3, 3, 3, 0.30), rgba(0, 0, 5, 0.30)), url(https://image.tmdb.org/t/p/w1400_and_h450_bestv2${movie.backdrop_path})`
   };
 

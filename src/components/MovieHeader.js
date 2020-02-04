@@ -90,19 +90,15 @@ const MovieHeader = ({ movie }) => {
     <div className={classes.root}>      
 
       <div className={classes.header} style={headerStyle}> 
- {/*        <IconButton onClick={handleOpen} disabled={!trailer || !trailer.key}>
-          <PlayCircleOutlineIcon
-            style={{ fontSize: 64, color: "#c53364" }}
-          ></PlayCircleOutlineIcon>
-        </IconButton> */}
       </div>
-      <Container maxWidth = 'sm' >
-      <Grid container spacing={2}>
-        <Grid item lg={5}>
+      <Container maxWidth = 'lg' >
+      <Grid container spacing={4}>
+        <Grid item lg={3} sm={4} md={6} >
           <img
             src={`https://image.tmdb.org/t/p/w600_and_h900_bestv2/${movie.poster_path}`}
             alt={movie.original_title}
             className={classes.moviePoster}
+            sm={4}
           />
         </Grid>
         <Grid item lg={6}>

@@ -66,13 +66,13 @@ const HomePage = () => {
   return (
     <div className={classes.root}>
       <Header />
-      <Container maxWidth = 'sm' >
+      <Container maxWidth = 'lg' >
       <div>
          <div className={classes.pageTitle}>
             Popular Movies
          </div> 
-         <Grid container spacing={2} >
-          <MoviesCardList movies={movies} />        
+         <Grid container  >
+          <MoviesCardList movies={movies} cols={6} />        
         </Grid>    
         </div>
      </Container> 

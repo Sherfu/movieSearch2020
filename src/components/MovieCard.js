@@ -19,11 +19,15 @@ import { Link as RouterLink } from "@reach/router";
 const useStyles = makeStyles(theme => ({
   card: {
     //maxWidth: 345
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)',   
+    borderRadius: "8px", 
+    background: "#081B23",
   },
   media: {
     width: "100%",
     minHeight: 364,
-    marginTop: "-48px",        
+    marginTop: "-48px",
+     
   },
   reating: { 
     background: "#01D277",
@@ -113,8 +117,6 @@ const MovieCard = ({ movie, loading, hideOverview }) => {
           {"Release:"  + movie.release_date || "Unknown"}
       </CardContent>  */}   
     </Card>
-
-  
     
   );
 };

@@ -175,30 +175,13 @@ function Header( ) {
   return (
  
     <div className={classes.root}> 
-{/*         <div className={classes.iconLtop}></div>
-        <div className={classes.iconRtop}></div> */}
+         <div className={classes.iconLtop}></div>
+        <div className={classes.iconRtop}></div> 
         <div className={classes.LogoRoot}>            
             <Logo fill="#01D277" className={classes.LogoImg}/>          
         </div> 
 {/*         <div className={classes.iconLBotm}></div>
         <div className={classes.iconRBotm}></div>   */}     
-{/*           <div className={classes.search}>
-                <div className={classes.searchIcon}>
-                  <SearchIcon />
-                </div>
-                <InputBase  
-                  placeholder="Search…"
-                  classes={{
-                    root: classes.inputRoot,
-                    input: classes.inputInput
-                  }}
-                  inputProps={{ 
-                      "aria-label": "search"                   
-                    }}
-                  onChange={(e) => searchChangeHandler(e)}
-                />
-              </div> */}  
-
             <Paper component="form" className={classes.searchRoot}>
             <InputBase
                 className={classes.searchInput}

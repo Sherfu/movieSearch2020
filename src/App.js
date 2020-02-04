@@ -16,7 +16,7 @@ import Container from "@material-ui/core/Container";
 
 function App() {
   return (
-    <Container maxWidth = 'sm' style={{ backgroundColor: '#081B23', padding:'0px 0px'}}>
+    <Container maxWidth = 'lg' style={{ backgroundColor: '#081B23', padding:'0px 0px'}}>
       <ThemeProvider theme={customTheme}>
         <CssBaseline />
           <Router>

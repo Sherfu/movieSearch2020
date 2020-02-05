@@ -43,7 +43,7 @@ const HomePage = () => {
   return (
     <div className={classes.root}>
       <Header />
-      <Container maxWidth = 'lg' >
+      <Container maxWidth = 'xl' >
       <div>
          <div className={classes.pageTitle}>
             Popular Movies

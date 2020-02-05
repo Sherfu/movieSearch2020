@@ -91,7 +91,7 @@ const useStyles = makeStyles(theme => ({
     padding: '2px 4px',
     display: 'flex',
     alignItems: 'center',    
-    margin: theme.spacing(0,8),    
+    margin: theme.spacing(0,3),    
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)',
     borderRadius: '22px',       
   },

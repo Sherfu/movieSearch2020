@@ -108,8 +108,8 @@ const useStyles = makeStyles(theme => ({
   },
   paperLt: {
     position: "absolute",
-    left: "11.13%",
-    right: "74.67%",
+    left: "12.13%",
+    right: "70.67%",
     top: "0%",
     bottom: "98.39%", 
     [theme.breakpoints.down('xs')]: {      
@@ -118,6 +118,10 @@ const useStyles = makeStyles(theme => ({
     background: "rgba(1, 210, 119, 0.83)",
     borderRadius: "3.5px",
     transform: "rotate(-45deg)",
+    [theme.breakpoints.up('lg')]: {
+      left: "22.13%",
+      right: "65.67%", 
+    },
   },
   paperLts: {
    // padding: theme.spacing(1),
@@ -127,12 +131,16 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down('xs')]: {
       right: "57.67%",
       bottom: "99.39%",
-    },
+    },    
     top: "0%",
     bottom: "98.39%",
     background: "rgba(1, 210, 119, 0.83)",
     borderRadius: "3.5px",
     transform: "rotate(-45deg)",
+    [theme.breakpoints.up('lg')]: {
+      left: "21.13%",
+      right: "56.67%",
+    },
   },
   paperRt: {
     //padding: theme.spacing(1),
@@ -147,6 +155,11 @@ const useStyles = makeStyles(theme => ({
     background: "rgba(1, 210, 119, 0.83)",
     borderRadius: "3.5px",
     transform: "rotate(-45deg)",
+    [theme.breakpoints.up('lg')]: {
+      left: "64.13%",
+      right: "10.67%",
+    },   
+
   },
   paperRts: {
     //padding: theme.spacing(1),
@@ -162,7 +175,10 @@ const useStyles = makeStyles(theme => ({
     background: "rgba(1, 210, 119, 0.83)",
     borderRadius: "3.5px",
     transform: "rotate(-45deg)",
-
+    [theme.breakpoints.up('lg')]: {
+      left: "65.13%",
+      right: "16.67%",
+    },
   },
   paperRtxs: {
     //padding: theme.spacing(1),

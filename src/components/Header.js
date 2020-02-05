@@ -124,7 +124,6 @@ const useStyles = makeStyles(theme => ({
     },
   },
   paperLts: {
-   // padding: theme.spacing(1),
     position: "absolute",
     left: "10.13%",
     right: "66.67%",

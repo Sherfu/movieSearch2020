@@ -5,6 +5,9 @@ import Typography from "@material-ui/core/Typography";
 //import Rating from "@material-ui/lab/Rating";
 //import IconButton from "@material-ui/core/IconButton";
 import Container from "@material-ui/core/Container";
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import { navigate } from "@reach/router"
+
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -59,14 +62,23 @@ const useStyles = makeStyles(theme => ({
     border: "1px solid #0F303D",
     boxSizing: "border-box",
     margin:"20px 0px",
+  },
+  arrewoIcon: {
+    position: "absolute",
+    left: "4.5%",
+    right: "12.5%",
+    top: "3.5%",
+    bottom: "12.5%",
+    color: "#FFFFFF",
   }
 
 }));
 
 const MovieHeader = ({ movie }) => {
  
-   console.log(movie);
+  // console.log(movie);
   const classes = useStyles();
+  
 
   const onErrorLoadingImage = e => {
     e.target.src = "";
@@ -80,11 +92,15 @@ const MovieHeader = ({ movie }) => {
    const yearOfRelease = new Date (movie.release_date).getFullYear();
 
   return (
-    <div className={classes.root}>      
-
+    <div className={classes.root}> 
+       <ArrowBackIcon  
+       className={classes.arrewoIcon}
+       onClick = {(e) => navigate('/') }      
+       />
       <div className={classes.header} style={headerStyle}> 
       </div>
       <Container maxWidth = 'lg' >
+
       <Grid container spacing={4}>
         <Grid item lg={3} sm={3} md={3} xs={6}>
           <img

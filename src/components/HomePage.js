@@ -7,8 +7,6 @@ import { fetchMovies } from "../actions/moviesActions";
 import Header from "../components/Header";
 import MoviesCardList from "../components/MoviesCardList";
 
-//import Loader from "../components/common/Loader";
-
 import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 

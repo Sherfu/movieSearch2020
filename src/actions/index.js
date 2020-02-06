@@ -6,8 +6,7 @@ export const client = axios.create({
 
 client.interceptors.request.use(
   function(config) {
-    console.log(config);
-    // Do something before request is sent
+    // console.log(config);
     return {
       ...config,
       params: {
@@ -17,7 +16,6 @@ client.interceptors.request.use(
     };
   },
   function(error) {
-    // Do something with request error
     return Promise.reject(error);
   }
 );

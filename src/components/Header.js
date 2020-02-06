@@ -126,7 +126,7 @@ const useStyles = makeStyles(theme => ({
   paperLts: {
     position: "absolute",
     left: "10.13%",
-    right: "66.67%",
+    right: "61.67%",
     [theme.breakpoints.down('xs')]: {
       right: "57.67%",
       bottom: "99.39%",
@@ -217,7 +217,7 @@ function Header( ) {
 
   const dispatch = useDispatch();
   
-  const { movies, loading, page, totalResults } = useSelector(
+  const { movies, totalResults } = useSelector(
     state => state.moviesStore
   );
 
@@ -227,13 +227,10 @@ function Header( ) {
     else dispatch(fetchMovies());
   };
 
-  //const isUpSm = useMediaQuery(theme.breakpoints.up("sm"));
-  return (
+   return (
  
     <div className={classes.root}> 
-  {/*       <div className={classes.iconLtop}></div>
-        <div className={classes.iconRtop}></div>  */}
-        <div maxWidth = 'lg' >
+         <div maxWidth = 'lg' >
           <Grid item lg={12} sm={12} md={12} xs={12}>
             <Grid container>
             <Paper className={classes.paperLt}></Paper>

@@ -11,7 +11,6 @@ import HomePage from "./components/HomePage";
 import MoviePage from "./components/MoviePage";
 import Container from "@material-ui/core/Container";
 
-//const drawerWidth = 240;
 //#F2F2F2 #303030
 
 function App() {
